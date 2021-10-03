@@ -15,9 +15,17 @@ class HomePage extends StatelessWidget {
           children: [
             Expanded(
               flex: 2,
-              child: Container(
-                height: 200,
-                color: Colors.blue,
+              child: Padding(
+                padding: const EdgeInsets.all(32),
+                child: Container(
+                  padding: EdgeInsets.all(8),
+                  decoration: BoxDecoration(color: Colors.white, shape: BoxShape.circle),
+                  child: CircleAvatar(
+                    backgroundColor: Colors.white,
+                    minRadius: MediaQuery.of(context).size.width / 10,
+                    backgroundImage: AssetImage('assets/images/about_guy.jpeg'),
+                  ),
+                ),
               ),
             ),
             Expanded(
