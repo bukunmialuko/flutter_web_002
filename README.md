@@ -2,9 +2,12 @@
 
 A new Flutter project.
 
-## deploy
+## deploy process
+[comment]: <> (flutter build web --web-renderer canvaskit --release)
 
-flutter build web
+build project using
 
 flutter build web --web-renderer html --release
-flutter build web --web-renderer canvaskit --release
+
+copy the file in build/web into the netlify folder, then push code to github.
+
